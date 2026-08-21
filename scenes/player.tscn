@@ -40,10 +40,11 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qpbue"]
-radius = 6.0
+radius = 5.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1881096614]
 z_index = 5
+collision_layer = 2
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1332812235]
@@ -53,5 +54,5 @@ animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=291415358]
-position = Vector2(1, -5)
+position = Vector2(1, -6)
 shape = SubResource("CircleShape2D_qpbue")
